@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main-banner {
+    background-color: #1E90FF;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.services, .latest-updates, .projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-box, .update-item, .project-item {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .navbar a {
+        display: inline-block;
+    }
+    
+    .service-box, .update-item, .project-item {
+        display: inline-block;
+        width: 45%;
+        margin: 2.5%;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar a {
+        display: inline-block;
+    }
+    
+    .service-box, .update-item, .project-item {
+        display: inline-block;
+        width: 22%;
+        margin: 1.5%;
+        box-sizing: border-box;
+    }
+}
