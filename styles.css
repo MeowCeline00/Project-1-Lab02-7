@@ -1,118 +1,177 @@
+/* Base Styles */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
+/* Navigation Bar Styles */
 .navbar {
-    background-color: #fff;
-    position: fixed; 
-    width: 100%; 
-    z-index: 1000;
+    background: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .container {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo a {
-    text-decoration: none; 
+    text-decoration: none;
     color: #333;
-    font-size: 24px; 
-    font-weight: bold; 
+    font-weight: bold;
+}
+
+.logo img {
+    vertical-align: middle;
+    width: 100px; /* Adjust according to actual logo size */
 }
 
 .nav-menu {
-    list-style: none; 
-    display: flex;
-    margin: 0; 
+    list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
 }
 
-.nav-menu li {
-    padding: 0 20px; 
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
 }
 
-.nav-menu a {
-    text-decoration: none; 
-    color: #333; 
-    font-size: 16px; 
-    transition: color 0.3s; 
+.nav-menu li a:hover {
+    color: #1E90FF;
 }
 
-.nav-menu a:hover {
-    color: #1E90FF; 
-}
-
+/* Slider Styles */
 .slider {
-    position: relative;
     width: 100%;
     overflow: hidden;
 }
 
 .slides {
     display: flex;
-    transition: transform 0.5s ease;
+    width: 300%; /* Adjust if more slides are added */
 }
 
 .slide {
+    width: 33.3333%; /* Adjust if more slides are added */
+    flex-shrink: 0;
+}
+
+.slide img {
     width: 100%;
-    flex: 0 0 auto;
-    transition: opacity 0.5s ease;
-    position: relative;
+    display: block;
 }
 
+/* Main Banner Styles */
 .main-banner {
-    background-color: #1E90FF;
-    color: white;
-    padding: 30px;
     text-align: center;
-}
-
-.services, .latest-updates, .projects {
-    padding: 20px;
-    text-align: center;
-}
-
-.service-box, .update-item, .project-item {
+    padding: 30px 20px;
+    background-color: #eef3f7;
     margin-bottom: 20px;
 }
 
+/* Services Section Styles */
+.services {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.service-box {
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    vertical-align: top;
+}
+
+.service-box img {
+    width: 80px; /* Adjust according to actual icon size */
+    height: auto;
+}
+
+/* Latest Updates Styles */
+.latest-updates {
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.update-item {
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    vertical-align: top;
+}
+
+.update-item .date {
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+/* Projects Section Styles */
+.projects {
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.project-item {
+    display: inline-block;
+    width: calc(33.333% - 40px);
+    margin: 20px;
+    vertical-align: top;
+}
+
+/* Footer Styles */
 .footer {
     background-color: #333;
     color: white;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
 }
 
-/* Responsive styles */
-@media (min-width: 768px) {
-    .navbar a {
-        display: inline-block;
-    }
-    
+/* Media Queries for Tablet */
+@media (max-width: 768px) {
     .service-box, .update-item, .project-item {
-        display: inline-block;
-        width: 45%;
-        margin: 2.5%;
-        box-sizing: border-box;
+        width: calc(50% - 40px);
     }
 }
 
-@media (min-width: 1024px) {
-    .navbar a {
-        display: inline-block;
+/* Media Queries for Mobile */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu li {
+        display: block;
+        width: 100%;
+    }
+
+    .nav-menu li a {
+        padding: 10px;
+    }
+
     .service-box, .update-item, .project-item {
-        display: inline-block;
-        width: 22%;
-        margin: 1.5%;
-        box-sizing: border-box;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .slider {
+        display: none; /* Consider using a mobile-friendly slider or hide it */
     }
 }
