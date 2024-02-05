@@ -90,12 +90,12 @@ body {
 }
 
 .prev {
-    left: 300px; 
+    left: 350px; 
     margin-left: -20px; 
 }
 
 .next {
-    right: 300px; 
+    right: 350px; 
     margin-right: -20px; 
 }
 
