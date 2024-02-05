@@ -5,6 +5,10 @@ body {
     color: #333;
 }
 
+.text-color {
+    color: #1eafde;
+  }
+  
 /* Navigation Bar Styles */
 .navbar {
     background: #ffffff;
