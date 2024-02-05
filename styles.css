@@ -20,7 +20,7 @@ body {
 .nav-menu {
     list-style-type: none;
     margin: 0;
-    padding: 0 100px;
+    padding: 0 10px;
     display: flex;
 }
 
