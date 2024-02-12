@@ -372,6 +372,11 @@ body {
     height: auto;
 }
 
+.enter_email img {
+    width: 180px;
+    height: auto;
+}
+
 /* Media Queries for Tablet */
 @media (max-width: 768px) {
     .service-box, .update-item, .project-item {
