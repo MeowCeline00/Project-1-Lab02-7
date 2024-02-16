@@ -288,6 +288,11 @@ body {
 
 
 /* Footer Styles */
+
+.author_info {
+    padding-top: 15px;
+}
+
 .footer {
     background-color: #0d293a; 
     color: white;
@@ -297,6 +302,10 @@ body {
 .author_info {
     display: flex;
     align-items: center;
+}
+
+.author_info_text {
+    padding-top: 20px;
 }
 
 .author_info_text h4 {
@@ -310,18 +319,25 @@ body {
 }
 
 .author_info_img img {
-    width: 60px; 
+    width: 80px; 
     height: auto; 
-    margin-right: 10px;
+    margin-right: 20px;
     padding-top: 30%;
 }
 
+.under_infos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
 
 .info_boxes {
     display: flex; 
     justify-content: space-between; 
     flex-wrap: wrap; 
     margin: 5px; 
+    padding-bottom: 10%;
 }
 
 .info_boxes h4 {
@@ -336,10 +352,10 @@ body {
 }
 
 .login_icons img {
-    margin: 4px;
-    width: 30px; 
-    height: auto;
-    vertical-align: middle; 
+    padding-top: 10px;
+    width: 25px; 
+    height: 25px;
+    vertical-align: left; 
 }
 
 .flickr_photos {
@@ -349,22 +365,31 @@ body {
 
 .flickr_title h4 {
     font-weight: bold; 
-    padding: 15px 0;
+    padding: 15px 10px;
+    text-align: left;
+}
+
+.About_Us p {
+    text-align: left;
 }
 
 .minion_pic {
-    display: flex; 
-    justify-content: space-around; 
-    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: auto auto auto;
     gap: 10px;
-    padding-bottom: 15px;
+    padding: 10px;
 }
 
 .minion_pic img {
-    width: calc(33.333% - 20px); 
-    flex: 0 0 calc(33.333% - 20px); 
-    height: auto; 
-    margin-bottom: 10px; 
+    width: 60px;;
+    height: 60px; 
+    margin: 1px;
+}
+
+.tweet_message {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
 }
 
 .tweet_message img {
@@ -372,8 +397,27 @@ body {
     height: auto;
 }
 
+.Newsletter {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    margin: 5px; 
+    padding-bottom: 25%;
+}
+
+.Newsletter h4 {
+    font-style: blod;
+    padding: 15px 0;
+}
+
+.Newsletter p {
+    margin: auto;
+    margin-bottom: 10px; 
+    font-size: small;
+}
+
 .enter_email img {
-    width: 180px;
+    width: 100%;
     height: auto;
 }
 
