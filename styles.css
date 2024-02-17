@@ -185,18 +185,25 @@ body {
     font-size: x-small;
 }
 
-.update-item {
-    display: inline-block; 
-    padding: 10px 10px 10px 10px;
-    margin: 10px;
+
+
+.update-item  {
+    display: inline-block;
+    width: calc(30% - 10px); 
+    margin: 15px;
+    background-color: white; 
     vertical-align: top;
+    box-sizing: border-box;
 }
 
 .update-item img {
-    width: 270px;
-    height: auto;
-    padding-left: 15%;
+    width: 100%;
+    height: auto; 
+    padding: 15px;
+    display: block; 
 }
+
+
 
 /* Projects Section Styles */
 
@@ -297,6 +304,7 @@ body {
     background-color: #0d293a; 
     color: white;
     padding: 0 300px; 
+    
 }
 
 .author_info {
@@ -319,7 +327,7 @@ body {
 }
 
 .author_info_img img {
-    width: 80px; 
+    width: 90px; 
     height: auto; 
     margin-right: 20px;
     padding-top: 30%;
@@ -328,7 +336,7 @@ body {
 .under_infos {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    gap: 10px;
+    gap: 12px;
     padding: 10px;
 }
 
@@ -352,9 +360,8 @@ body {
 }
 
 .login_icons img {
-    padding-top: 10px;
-    width: 25px; 
-    height: 25px;
+    width: 30px; 
+    height: 30px;
     vertical-align: left; 
 }
 
@@ -365,7 +372,6 @@ body {
 
 .flickr_title h4 {
     font-weight: bold; 
-    padding: 15px 10px;
     text-align: left;
 }
 
@@ -377,7 +383,6 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
-    padding: 10px;
 }
 
 .minion_pic img {
@@ -411,14 +416,21 @@ body {
 }
 
 .Newsletter p {
-    margin: auto;
-    margin-bottom: 10px; 
+    /* margin: auto; */
+    margin-top: -1%;
     font-size: small;
+    margin: -20%;
+    padding-top: -2%;
+    padding-left: 15%;
 }
 
 .enter_email img {
-    width: 100%;
+    width: 120%;
     height: auto;
+    margin: 0% -8% -25% -6%;
+    padding: -50%;
+
+
 }
 
 /* Media Queries for Tablet */
